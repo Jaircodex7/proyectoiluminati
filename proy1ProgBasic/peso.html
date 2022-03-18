@@ -1,0 +1,34 @@
+<!DOCTAYPE html>
+<html>
+    <head>
+        <title>Tu peso no es de este mundo</title>
+        <style type="text/css">
+        body
+        {
+            background-color: brown;
+            color: darkblue; 
+            font-family: sans-serif;         
+        }
+        h1
+        {
+            background-color: darkgoldenrod;
+            font-family: sans-serif;
+
+        }
+        </style>
+    </head>
+    <body>
+       <h1>Tu peso en otro planeta como Marte y Jupiter ohhohohhhhh!</h1>
+       <p>Ahora pesas menos o mas en otro planeta?</p>
+        <script type="text/javascript">
+            var usuario = prompt("Cual es tu peso?");
+            var peso = parseFloat(usuario);
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            var peso_final = peso * g_jupiter / g_tierra;
+            peso_final=(peso_final.toFixed(3));
+            document.write("tu peso en Marte es <strong>" + peso_final + " Kilos</strong>");
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+body
+{  
+    background-color: hotpink;
+}
+p
+{
+    color:mediumblue;
+    font-family: cursive; 
+}
+h1
+{
+    color: yellow;
+    text-align: center;
+}
+h2
+{
+    color: teal;
+}

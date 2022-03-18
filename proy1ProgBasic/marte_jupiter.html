@@ -1,0 +1,49 @@
+<!DOCTAYPE html>
+<html>
+    <head>
+        <title>Tu peso no es de este mundo</title>
+        <style type="text/css">
+        body
+        {
+            background-color: #8d1fa875;
+            color: darkblue; 
+            font-family: sans-serif;         
+        }
+        h1
+        {
+            background-color: darkgoldenrod;
+            font-family: sans-serif;
+
+        }
+        </style>
+    </head>
+    <body>
+       <h1>Tu peso en otro planeta como Marte y Jupiter ohhohohhhhh!</h1>
+       <p>Ahora pesas menos o mas en otro planeta?</p>
+        <script type="text/javascript">
+            var usuario = prompt("Cual es tu peso?");
+            var planeta = parseInt(prompt("Elige tu planeta;\n1 es Marte y 2 es Jupiter"));
+            var peso = parseInt(usuario);
+            var g_tierra = 9.8;
+            var g_marte = 3.7;
+            var g_jupiter = 24.8;
+            var nombre_planeta; 
+            var peso_final;
+            if(planeta == 1)
+            {
+                peso_final = parseInt(peso*g_marte/g_tierra);
+                document.write("Tu peso en Marte es <strong> " + peso_final + " Kilos</strong>");
+            }
+            else if(planeta == 2)
+            {
+                peso_final = parseInt(peso*g_jupiter/g_tierra);
+                document.write("Tu peso perro en Jupiter es <strong>" + peso_final + " kilos</strong>");
+            }
+            else
+            {
+                peso_final = 10000000000;
+                document.write("perrro te dije 2 o 1 tu peso em <strong> CRIPTON es" + peso_final + " Kilos</strong>");
+            }
+        </script>
+    </body>
+</html>
